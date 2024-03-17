@@ -37,6 +37,7 @@ const Login = () => {
     try {
       const { data } = await loginUser({ variables: { email, password } });
       sessionStorage.setItem("accessToken",data.loginUser.accessToken)
+      sessionStorage.setItem("Role",data.loginUser.role)
       login(data.loginUser);
       toast({
         position: 'top',

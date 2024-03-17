@@ -2,7 +2,8 @@ import { Box, Button, Flex, Heading, Image, Select, Text, useDisclosure } from '
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-import UserProfile from './UserProfile'
+import user from '../Assets/user.png'
+
 
 const Navbar = () => {
 
@@ -28,7 +29,7 @@ const Navbar = () => {
                 </Flex>
                          { token ? 
                          <Flex gap={"15px"}>
-                            <Image src='https://static.vecteezy.com/system/resources/thumbnails/019/879/186/small/user-icon-on-transparent-background-free-png.png' width={"75px"} onClick={gotoUser}/>
+                            <Image src={user} width={"40px"} onClick={gotoUser}/>
                             <Button colorScheme='blackAlpha' onClick={Logout} >Logout</Button>
                             
                         </Flex> :

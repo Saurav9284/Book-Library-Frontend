@@ -12,6 +12,7 @@ const UserProfile = () => {
     navigate('/login');
   };
 
+
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh' }}>
       {authStatus && userData && (
