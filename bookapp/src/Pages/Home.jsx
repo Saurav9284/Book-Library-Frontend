@@ -36,7 +36,7 @@ const Home = () => {
       {role === "Admin" ? (
         <Box w="full" py={10} bg="gray.100">
           <Box w="10/12" m="auto" rounded="lg" py={15} bg="white">
-            <Text textAlign="center" color="red">Frontend is not fully completed</Text>      
+            <Text textAlign="center" color="red">Frontend is not fully responsive but not completed yet</Text>      
             <Heading
               textAlign="center"
               pb={16}
